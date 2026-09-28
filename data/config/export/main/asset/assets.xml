@@ -1,0 +1,164 @@
+<ModOps>
+  <ModOp Type="replace"
+         Path="//Assets/Asset[Template='NewspaperBalancing']/Values/NewspaperBalancing/NewspaperIntervalConfig/*/NewspaperIntervalPrioThreshold">
+    <NewspaperIntervalPrioThreshold>0</NewspaperIntervalPrioThreshold>
+  </ModOp>
+  <ModOp Type="replace"
+         Path="//Assets/Asset[Template='NewspaperBalancing']/Values/NewspaperBalancing/NewspaperIntervalConfig/*/MinNewspaperInterval">
+    <MinNewspaperInterval>300000</MinNewspaperInterval>
+  </ModOp>
+  <ModOp Type="replace"
+         Path="//Assets/Asset[Template='NewspaperBalancing']/Values/NewspaperBalancing/NewspaperIntervalConfig/*/MaxNewspaperInterval">
+    <MaxNewspaperInterval>300000</MaxNewspaperInterval>
+  </ModOp>
+
+  <ModOp Type="replace" Path="//Assets/Asset[Template='NewspaperBalancing']/Values/NewspaperBalancing/MaxPublishDelay">
+    <MaxPublishDelay>180000</MaxPublishDelay>
+  </ModOp>
+
+  <ModOp Type="replace"
+         Path="//Assets/Asset[Template='ObjectBuildNewsTracker']/Values/ObjectBuildNewsTracker/ObjectNews/Item/TriggerFilter[text()='OncePerArea' or text()='Once']">
+    <TriggerFilter>None</TriggerFilter>
+  </ModOp>
+
+  <ModOp Type="replace" Path="//Assets/Asset[Template='NewspaperBalancing']/Values/NewspaperBalancing/CategoryDebuffs">
+    <CategoryDebuffs>
+      <None>0</None>
+      <Satisfaction>0</Satisfaction>
+      <Economy>0</Economy>
+      <Special>0</Special>
+      <Filler>0</Filler>
+      <Progress>0</Progress>
+      <Beautification>0</Beautification>
+      <Monument>0</Monument>
+      <VictoryAndLose>0</VictoryAndLose>
+      <HostileTakeover>0</HostileTakeover>
+      <Diplomacy>0</Diplomacy>
+      <Military>0</Military>
+      <Expeditions>0</Expeditions>
+      <Visitors>0</Visitors>
+      <CityAttractiveness>0</CityAttractiveness>
+      <Quests>0</Quests>
+    </CategoryDebuffs>
+  </ModOp>
+
+  <ModOp Type="replace" Path="//Assets/Asset[Template='NewspaperArticle']/Values/NewspaperArticle/NewsPriority">
+    <NewsPriority>
+      <StartValue>505</StartValue>
+      <LossOnPublish>1000</LossOnPublish>
+      <RecoveryByInterval>10</RecoveryByInterval>
+      <Maximum>1000</Maximum>
+      <Minimum>-1000</Minimum>
+    </NewsPriority>
+  </ModOp>
+
+  <ModOp Type="merge" Path="//Assets/Asset[
+      Values/Standard/Name='FirstArtisansSettled' or
+      Values/Standard/Name='FirstEngineersSettled' or
+      Values/Standard/Name='FirstInvestorsSettled' or
+      Values/Standard/Name='FirstWorkersSettled'
+    ]/Values/NewspaperArticle">
+    <Category>Visitors</Category>
+  </ModOp>
+  <ModOp Type="replace" Path="//Assets/Asset[
+      Values/Standard/Name='FirstArtisansSettled' or
+      Values/Standard/Name='FirstEngineersSettled' or
+      Values/Standard/Name='FirstInvestorsSettled' or
+      Values/Standard/Name='FirstWorkersSettled'
+    ]/Values/NewspaperArticle/NewsPriority">
+    <NewsPriority>
+      <StartValue>900</StartValue>
+      <LossOnPublish>900</LossOnPublish>
+      <RecoveryByInterval>10</RecoveryByInterval>
+      <Maximum>1000</Maximum>
+      <Minimum>-1000</Minimum>
+    </NewsPriority>
+  </ModOp>
+
+  <ModOp Type="merge" Path="//Assets/Asset[
+      Values/Standard/Name='FirstIslandArcticSettled' or
+      Values/Standard/Name='FirstIslandColony02Settled' or
+      Values/Standard/Name='FirstIslandColonySettled' or
+      Values/Standard/Name='FirstIslandModerateSettled' or
+      Values/Standard/Name='NewIslandSettled' or
+      Values/Standard/Name='NewModerateSessionUnlocked' or
+      Values/Standard/Name='NewRegionUnlocked' or
+      Values/Standard/Name='PeaceDeclaredToPlayer'
+    ]/Values/NewspaperArticle">
+    <Category>Expeditions</Category>
+  </ModOp>
+
+  <ModOp Type="merge" Path="//Assets/Asset[
+      Values/Standard/Name='FirstIslandArcticSettled' or
+      Values/Standard/Name='FirstIslandColony02Settled' or
+      Values/Standard/Name='FirstIslandColonySettled' or
+      Values/Standard/Name='FirstIslandModerateSettled' or
+      Values/Standard/Name='NewIslandSettled' or
+      Values/Standard/Name='NewModerateSessionUnlocked' or
+      Values/Standard/Name='NewRegionUnlocked' or
+      Values/Standard/Name='PeaceDeclaredToPlayer'
+    ]/Values/NewspaperArticle/NewsPriority">
+    <StartValue>1500</StartValue>
+  </ModOp>
+
+  <Group>
+    <ModOp GUID="141203" Type="merge" Path="/Values/NewspaperArticle">
+      <Category>Filler</Category>
+      <ArticleType>Filler</ArticleType>
+    </ModOp>
+    <ModOp GUID="141740" Type="merge" Path="/Values/NewspaperArticle">
+      <Category>Filler</Category>
+      <ArticleType>Filler</ArticleType>
+    </ModOp>
+    <ModOp GUID="142177" Type="merge" Path="/Values/NewspaperArticle">
+      <Category>Filler</Category>
+      <ArticleType>Filler</ArticleType>
+    </ModOp>
+    <ModOp GUID="142178" Type="merge" Path="/Values/NewspaperArticle">
+      <Category>Filler</Category>
+      <ArticleType>Filler</ArticleType>
+    </ModOp>
+    <ModOp GUID="142181" Type="merge" Path="/Values/NewspaperArticle">
+      <Category>Filler</Category>
+      <ArticleType>Filler</ArticleType>
+    </ModOp>
+    <ModOp GUID="142182" Type="merge" Path="/Values/NewspaperArticle">
+      <Category>Filler</Category>
+      <ArticleType>Filler</ArticleType>
+    </ModOp>
+    <ModOp GUID="142183" Type="merge" Path="/Values/NewspaperArticle">
+      <Category>Filler</Category>
+      <ArticleType>Filler</ArticleType>
+    </ModOp>
+    <ModOp GUID="142184" Type="merge" Path="/Values/NewspaperArticle">
+      <Category>Filler</Category>
+      <ArticleType>Filler</ArticleType>
+    </ModOp>
+    <ModOp GUID="142188" Type="merge" Path="/Values/NewspaperArticle">
+      <Category>Filler</Category>
+      <ArticleType>Filler</ArticleType>
+    </ModOp>
+
+    <ModOp GUID="141203" Type="remove" Path="/Values/NewspaperArticle/ArticleEffect" />
+    <ModOp GUID="141203" Type="remove" Path="/Values/NewspaperArticle/EffectValue" />
+    <ModOp GUID="141740" Type="remove" Path="/Values/NewspaperArticle/ArticleEffect" />
+    <ModOp GUID="141740" Type="remove" Path="/Values/NewspaperArticle/EffectValue" />
+    <ModOp GUID="142188" Type="remove" Path="/Values/NewspaperArticle/EffectValue" />
+  </Group>
+
+<ModOp Type="replace"
+       Path="//Assets/Asset[
+           Values/Standard/GUID='141820' or
+           Values/Standard/GUID='141821' or
+           Values/Standard/GUID='141824' or
+           Values/Standard/GUID='141806'
+         ]/Values/NewspaperArticle/NewsPriority">
+  <NewsPriority>
+    <StartValue>-500</StartValue>
+    <LossOnPublish>1000</LossOnPublish>
+    <RecoveryByInterval>1</RecoveryByInterval>
+    <Maximum>-700</Maximum>
+    <Minimum>-1000</Minimum>
+  </NewsPriority>
+</ModOp>
+</ModOps>

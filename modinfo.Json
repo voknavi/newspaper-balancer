@@ -1,0 +1,51 @@
+{
+  "Version": "1.0.0",
+  "ModID": "Newspaper_Rebalance_Frequent",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "Category": {
+    "Chinese": null,
+    "English": "Gameplay",
+    "French": null,
+    "German": "Spielablauf",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": "Игровой процесс",
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "ModName": {
+    "Chinese": null,
+    "English": "Newspaper Rebalance - Frequent Articles",
+    "French": null,
+    "German": "Zeitung Rebalance - Häufigere Artikel",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": "Ребаланс газет - более частые статьи",
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "Description": {
+    "Chinese": null,
+    "English": "Rebalances the newspaper system: newspapers now publish on a fixed 10-minute interval regardless of game stage, building-construction news is no longer limited to 'once per area' or 'once per game' and will repeat every time you build, category cooldowns (CategoryDebuffs) have been retuned so Satisfaction news cools down slower while Monument and Expedition news can appear far more often, and many articles have been recategorized (Economy, Military, Beautification, Special, CityAttractiveness, Visitors, Filler, Expeditions) to better reflect their actual topic.",
+    "French": null,
+    "German": "Balanciert das Zeitungssystem neu: Zeitungen erscheinen jetzt in einem festen 10-Minuten-Intervall unabhängig von der Spielphase, Baumeldungen sind nicht mehr auf 'einmal pro Gebiet' oder 'einmal pro Spiel' begrenzt und wiederholen sich bei jedem Bau, die Kategorie-Abkühlzeiten (CategoryDebuffs) wurden neu abgestimmt, und viele Artikel wurden neu kategorisiert.",
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": "Ребалансирует систему газет: газеты теперь выходят строго раз в 10 минут независимо от стадии игры, новости о постройке зданий больше не ограничены 'один раз на область' или 'один раз за игру' и повторяются при каждой стройке, штрафы категорий (CategoryDebuffs) пересчитаны так, что новости о довольствии остывают дольше, а новости монументов и экспедиций могут появляться намного чаще, а многие статьи перекатегоризированы (Economy, Military, Beautification, Special, CityAttractiveness, Visitors, Filler, Expeditions) в соответствии со своей темой.",
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "KnownIssues": null,
+  "LoadAfterIds": null,
+  "DLCDependencies": null,
+  "CreatorName": "voknavi",
+  "Image": null,
+  "ModioResourceId": null
+}
