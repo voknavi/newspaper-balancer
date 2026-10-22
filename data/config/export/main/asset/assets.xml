@@ -46,7 +46,7 @@
     <NewsPriority>
       <StartValue>505</StartValue>
       <LossOnPublish>1000</LossOnPublish>
-      <RecoveryByInterval>10</RecoveryByInterval>
+      <RecoveryByInterval>50</RecoveryByInterval>
       <Maximum>1000</Maximum>
       <Minimum>-1000</Minimum>
     </NewsPriority>
@@ -69,7 +69,7 @@
     <NewsPriority>
       <StartValue>900</StartValue>
       <LossOnPublish>900</LossOnPublish>
-      <RecoveryByInterval>10</RecoveryByInterval>
+      <RecoveryByInterval>50</RecoveryByInterval>
       <Maximum>1000</Maximum>
       <Minimum>-1000</Minimum>
     </NewsPriority>
@@ -151,6 +151,7 @@
            Values/Standard/GUID='141820' or
            Values/Standard/GUID='141821' or
            Values/Standard/GUID='141824' or
+           Values/Standard/GUID='141866' or
            Values/Standard/GUID='141806'
          ]/Values/NewspaperArticle/NewsPriority">
   <NewsPriority>
